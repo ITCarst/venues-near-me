@@ -1,0 +1,63 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   background: tomato;
+   flex: 1 100%;
+   height: 70px;
+   text-align: center;
+}
+
+.wrapper {
+	width:100%;
+	height:100%;
+	position: relative;
+	display: flex;
+   	flex-flow: row wrap;
+}
+
+.left-panel {
+	flex: 1 30%;
+	height: 100%;
+}
+
+.content {
+	flex: 1 70%;
+	height: 100%;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0; 
+}
+
+li {
+	padding: 10px
+}
+li.selected {
+	background: #ccc;
+}
+
+.venue-row {
+	border-bottom: 1px solid #ccc;
+}
+
+.venue-col {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.radiusHolder {
+	text-align: left;
+	margin-left: 20px;
+	color: #fff;
+}
+.radiusHolder input[type="range"] {
+	display: inline-block;
+}
